@@ -1,0 +1,29 @@
+Index: src/main/resources/archetype-resources/src/main/java/App.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\n\nimport java.io.IOException;\nimport java.time.LocalTime;\n\n/**\n * Hello world!\n *\n */\npublic class App\n{\n    public static void main( String[] args )\n    {\n      
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/archetype-resources/src/main/java/App.java b/src/main/resources/archetype-resources/src/main/java/App.java
+--- a/src/main/resources/archetype-resources/src/main/java/App.java	(revision a17a8a2c6e9706925a21dd907a2cef2f960d9434)
++++ b/src/main/resources/archetype-resources/src/main/java/App.java	(date 1708824114248)
+@@ -11,4 +11,16 @@
+ {
+     public static void main( String[] args )
+     {
+-      
+\ No newline at end of file
++        LocalTime currentTime = LocalTime.now();
++
++        String greeting;
++        if (currentTime.isBefore(LocalTime.NOON)) {
++            greeting = "Good morning";
++        } else {
++            greeting = "Good afternoon";
++        }
++
++        // Display the greeting message
++        System.out.println(greeting + ", <your name>, Welcome to COMP367");
++    }
++}
