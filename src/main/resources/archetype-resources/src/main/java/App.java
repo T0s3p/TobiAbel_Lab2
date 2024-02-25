@@ -1,13 +1,14 @@
-package $org.example;
+package org.example;
+
+import java.io.IOException;
+import java.time.LocalTime;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Welcome to COMP367!" );
-    }
-}
+      
